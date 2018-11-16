@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% block meta %}
+  {% endblock %}
+  <!-- Title -->
+  <title>{{ title }}</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+  {# SOME STYLESHEETS HERE #}
+
+  {% block header %}
+  <!-- CSS Customization -->
+  {% endblock %}
+</head>
+
+<body>
+  {# margin to accommodate header bar #}
+  <main class='g-mt-70'>
+    {# HEADER #} 
+    {% include "header.njk"%} 
+    
+    {% block body %}
+    <div class="container g-py-150 text-center">
+      <h1 class="g-font-size-60 mb-4">Blank Page</h1>
+      <p class="g-font-size-18 mb-5">You have just reached a work-in-progress!</p>
+      <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="/">Back to the Home Page</a>
+    </div>
+    {% endblock %} 
+    
+    {# FOOTER #} 
+    {% include "footer.njk"%}
+  </main>
+
+  {# SOME SCRIPTS HERE #}
+
+  {%block script%}
+  {%endblock%}
+  <script>
+    // some initialisation scripts here to be included in all templates
+  </script>
+</body>
+
+</html>
