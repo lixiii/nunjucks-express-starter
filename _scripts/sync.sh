@@ -1,2 +1,2 @@
 echo "Synchronising frontend resources"
-rsync -auvP ./assets/ ubuntu@lixiii.sample.xyz:~/sample/assets/
+rsync -auvP ./assets/ ubuntu@www.sample.com:~/sample/assets/

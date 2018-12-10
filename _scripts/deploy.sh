@@ -12,5 +12,5 @@ sudo forever start --append --uid "sample" server.js
 echo 
 echo '-------------'
 echo Updating reverse proxy
-sudo cp ./sample.xyz.conf /etc/nginx/conf.d/sample.xyz.conf
+sudo cp ./sample.com.conf /etc/nginx/conf.d/sample.com.conf
 sudo systemctl restart nginx
