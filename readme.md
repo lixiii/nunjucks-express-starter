@@ -10,7 +10,7 @@ This template includes all of the following features. If you do not need any of 
 
 | Feature | Files / Folders | Remarks|
 |:---:|:---:|---|
-| Nginx reverse proxy |  sample.com.conf | I use this to make a server serve multiple domains at the same time. Each domain is served by Express over a different port and Nginx reverse proxy routes traffic to the correct port |
+| Nginx reverse proxy |  sample.com.conf, _scripts/deploy.sh | I use this to make a server serve multiple domains at the same time. Each domain is served by Express over a different port and Nginx reverse proxy routes traffic to the correct port |
 | robots.txt | templates/robots.txt |  |
 | Simple deploy script | _scripts/deploy.sh, package.json | This script is run over SSH on the target server. This is the simplest possible deploy script: it pulls the repo and restarts `forever` |
 | Resources synchronisation script | _scripts/sync.sh | This script uses `rsync` to synchronise front-end resources that are not committed to `git` |
