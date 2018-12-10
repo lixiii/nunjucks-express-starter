@@ -1,4 +1,4 @@
-# setup alias
+# This script is run on the target server over SSH by the NPM script. 
 echo 
 echo '-------------'
 echo "Deploying sample project to server"
