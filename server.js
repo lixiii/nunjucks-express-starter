@@ -19,7 +19,6 @@ var app = express();
  * Initialisation routine
  */
 
-
 nunjucks.configure(['templates'], {
   autoescape: true,
   express: app
