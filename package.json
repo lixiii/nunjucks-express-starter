@@ -1,7 +1,7 @@
 {
   "name": "nunjucks-express-starter",
   "version": "1.0.0",
-  "description": "Start Nunjucks + Express project",
+  "description": "Starter Nunjucks + Express project",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon --ext js,njk server.js --dev",
