@@ -27,7 +27,8 @@ nunjucks.configure(['templates'], {
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({limit: '50mb', extended: false }));
 app.use(bodyParser.json({limit: '50mb'}));
-routes.init(app);
+
+app.use(routes);
 
 var _port = 8001;
 if(DEV_MODE) _port = 8080;

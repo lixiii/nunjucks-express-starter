@@ -1,22 +1,22 @@
 var express = require("express");
+var router = express.Router();
 
 // CSRF protection
 const csrf = require('csurf');
 var csrfProtection = csrf({ cookie: true });
 
 
-exports.init = function(app) {
-  // simple routes
-  app.get( '/', csrfProtection, routeHome);
+// simple routes
+router.get( '/', csrfProtection, routeHome);
 
-  //serve static asset files
-  app.use('/assets', express.static('./assets'));
+//serve static asset files
+router.use('/assets', express.static('./assets'));
 
-  // catch all
-  app.get( '/*', function( req, res ) {
-    return res.render( '404.html' ) ;
-  } );
-}
+// catch all
+router.get( '/*', function( req, res ) {
+  return res.render( '404.html' ) ;
+} );
+
 
 function routeHome( req, res ) {
 
@@ -27,3 +27,5 @@ function routeHome( req, res ) {
   }) ;
   
 }
+
+module.exports = router
