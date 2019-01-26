@@ -4,6 +4,13 @@
 
 This starter template assumes we are working with `sample.com` which you should of course change to the correct domain. 
 
+## Dependencies
+
+Project dependencies can be installed using ```npm i``` **BUT** this project requires on the following *global* dependencies.
+
+- NodeJS v8.9.x or above
+- pm2 (install using `npm i -g pm2`)
+
 ## Features included in this template
 
 This template includes all of the following features. If you do not need any of them, delete/modify the corresponding files. 

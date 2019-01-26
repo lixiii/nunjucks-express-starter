@@ -5,8 +5,8 @@ echo "Deploying sample project to server"
 cd sample
 git pull
 # npm i
-sudo forever stop sample
-sudo forever start --append --uid "sample" server.js
+pm2 stop sample-app
+pm2 start server.js --name="sample-app"
 
 # Update reverse proxy
 echo 
